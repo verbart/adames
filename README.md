@@ -1,7 +1,3 @@
-Template in PSD - *https://www.dropbox.com/s/47ogz6z0ntzrgyk/GBusiness.psd?dl=0*
-
----
-
 ### Developing
 
 1. Run `npm install` to install dependencies.
