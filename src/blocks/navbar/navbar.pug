@@ -1,0 +1,23 @@
+header.navbar
+    .container.navbar__content
+        .navbar__brand
+            a(href='/')
+                img(src='images/logo.png' alt='Logo of "G Business"')
+
+        .navbar__info
+            .workingHours
+                .workingHours__item ПН-ПТ  10:00 - 21:00
+                .workingHours__item СБ-ВС  10:00 - 20:00
+
+            .navbar__contact
+                a.phone(href='tel:+7495432-09-02') +7 (495) 432-09-02
+                address.address Адрес: м.Кропоткинская, ул. Волхонка, д. 18/2
+
+        .navbar__menu
+            include ../menu/menu
+
+        .navbar__burgerButton
+            .burgerButton(data-target='.navbar__menu')
+                .burgerButton__piece
+                .burgerButton__piece
+                .burgerButton__piece

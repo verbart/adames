@@ -1,0 +1,85 @@
+.navbar
+  //position fixed
+  //top 0
+  //left 0
+  //right 0
+  background #fff
+  box-shadow 0 4px 10px rgba(1, 2, 2, .1)
+  font-family Ubuntu, Tahoma, Geneva, sans-serif
+  z-index 100
+  &__content
+    display flex
+    justify-content space-between
+    flex-wrap wrap
+    @media (max-width 992px)
+      justify-content flex-start
+  &__brand
+    display flex
+    align-items center
+    order 1
+    width 25%
+    margin-right auto
+    padding-top 1rem
+    @media (max-width 992px)
+      margin-right 0
+      padding-top .8rem
+      padding-bottom .8rem
+    @media (max-width 768px)
+      width 50%
+    img
+      max-height 5rem
+
+  &__info
+    display flex
+    align-items center
+    order 2
+    @media (max-width 768px)
+      display none
+  &__contact
+    display flex
+    flex-direction column
+    .phone
+      margin-bottom 5px
+      color orange
+      text-shadow 1px 1px 1px grey
+      font-weight normal
+      font-style normal
+      font-size 30px
+      text-decoration none
+      line-height 1
+    .address
+      color orange
+      font-size 11px
+      font-weight bold
+      font-style normal
+
+  &__menu
+    order 3
+    width 100%
+    @media (min-width 992px)
+      padding 20px
+    @media (max-width 992px)
+      max-height 0
+      width 100vw
+      overflow hidden
+      background #fff
+      transition max-height .4s
+      &.is-open
+        max-height 100vh
+        padding-bottom 20px
+
+  &__burgerButton
+    display flex
+    align-items center
+    order 2
+    margin-left auto
+    @media (min-width 992px)
+      display none
+
+.workingHours
+  padding 20px
+  color orange
+  &__item
+    margin-top 2px
+    margin-bottom 2px
+    font 16px/1 Ubuntu, sans-serif
